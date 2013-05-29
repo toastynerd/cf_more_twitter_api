@@ -10,10 +10,13 @@ Configure the following variables in application.yml
 * REDIS_SERVER: 'your Redis server address'
 
 Run the following:
-  rake resque:setup
+
+    rake resque:setup
 
 To start the scheduler:
-  rake resque:scheduler
+
+    rake resque:scheduler
 
 And to start a worker:
-  rake resque:work
+
+    rake resque:work
