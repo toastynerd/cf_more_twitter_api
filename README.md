@@ -5,9 +5,9 @@ An app combinig oauth, twitter, resque and resque scheduler
 Installation and Use
 -----------------------------------------------------
 Configure the following variables in application.yml
-*TWITTER_KEY: 'your twitter consumer key'
-*TWITTER_SECRET: 'your twitter consumer secret'
-*REDIS_SERVER: 'your Redis server address'
+* TWITTER_KEY: 'your twitter consumer key'
+* TWITTER_SECRET: 'your twitter consumer secret'
+* REDIS_SERVER: 'your Redis server address'
 
 Run the following:
   rake resque:setup
