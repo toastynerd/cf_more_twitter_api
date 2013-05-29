@@ -2,6 +2,8 @@ OauthTwitterApi::Application.routes.draw do
   root :to => "tweets#index"
   resources :tweets
 
+  mount Resque::Server, :at => "/resque"
+
   match 'auth/:provider/callback', to: 'sessions#create'
   match 'auth/failure', to: redirect('/')
   match 'signout', to: 'sessions#destroy', as: 'signout'

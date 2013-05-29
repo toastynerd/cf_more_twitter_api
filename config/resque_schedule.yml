@@ -1,0 +1,4 @@
+send_to_twitter:
+  class: SendToTwitter
+  args:
+  description: send a message to twitter.

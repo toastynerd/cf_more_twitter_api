@@ -22,8 +22,21 @@
 
   <body>
 
-    <%= yield %>
+    <div class="row">
+      <% if current_user %>
+        Signed in as <%= current_user.name %>
+        <%= link_to "Sign out", signout_path %>
+      <% else %>
+        <%= link_to "Sign in with twitter", "/auth/twitter" %>
+      <% end %>
+      <% flash.each do |key, value| %>
+      <div class="flash" id="<%= key %>">
+        <%= value %>
+      </div>
+      <% end %>
 
+    <%= yield %>
+    </div>
     
     <%= javascript_include_tag "application" %>
   </body>

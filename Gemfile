@@ -14,6 +14,12 @@ gem 'twitter'
 #environment variable management
 gem 'figaro'
 
+gem 'dynamic_form'
+
+#resque and resque for scheduling tweets
+gem 'resque', :require => "resque/server"
+gem 'resque-scheduler'
+
 
 # Gems used only for assets and not required
 # in production environments by default.
