@@ -2,7 +2,7 @@ Oauth and Twitter with Resque and Resque scheduler
 ===================================================
 An app combinig oauth, twitter, resque and resque scheduler
 
-Installation and Use
+Setting up the app and use
 -----------------------------------------------------
 Configure the following variables in application.yml
 * TWITTER_KEY: 'your twitter consumer key'
